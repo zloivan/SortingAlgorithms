@@ -10,7 +10,12 @@ namespace SortingAlgorithms
     {
         static void Main(string[] args)
         {
-            
+            Sorting sort = new BubleSorting(10);
+            sort.Fill(Sorting.FillType.Random);
+            Console.WriteLine($"{sort} {sort.Transactions}");
+            sort.Sort();
+
+            Console.WriteLine($"{sort} {sort.Transactions} {sort.Comparisions}");
 
 
         }
